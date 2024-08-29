@@ -7,15 +7,13 @@
 {% block content %}
     <section>
         <h1>Posts</h1>
-
-        {% for post in posts %}
-            <article class='post'>
-                <h2>{{ post.title }}</h2>
+        <article class='post'>
+            {% for post in posts %}
+                <h1>{{ post.title }}</h1>
                 <p>{{ post.date }}</p>
-                <p>{{ post.body}}</p>
-            </article>
-        {% endfor %}
+                <p>{{ post.body }}</p>
+            {% endfor %}
+        </article>
     </section>
-    
     
 {% endblock  %}
